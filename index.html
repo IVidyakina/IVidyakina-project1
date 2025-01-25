@@ -36,6 +36,15 @@
         .header__menu-item {
             margin-left: 20px;
         }
+        .header__menu-item a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s; /* Плавный переход цвета */
+        }
+        .header__menu-item a:hover,
+        .header__menu-item a:focus {
+            color: #007BFF; /* Цвет при наведении и фокусе */
+        }
         .main {
             padding: 20px;
         }
@@ -64,10 +73,35 @@
             border: 1px solid #ccc; /* Граница */
             box-sizing: border-box; /* Учитываем границы в размерах */
         }
+        .header__registration-input:disabled {
+            background-color: #e9ecef; /* Цвет для отключённых полей */
+        }
         .header__registration-submit,
         .header__registration-cancel {
             padding: 10px 20px; /* Отступы */
             margin-top: 10px; /* Отступ сверху */
+            cursor: pointer; /* Указатель при наведении */
+            transition: background-color 0.3s; /* Плавный переход фона */
+        }
+        .header__registration-submit:hover,
+        .header__registration-submit:focus,
+        .header__registration-cancel:hover,
+        .header__registration-cancel:focus {
+            background-color: #007BFF; /* Цвет при наведении и фокусе */
+            color: white; /* Цвет текста при наведении */
+        }
+        @media (max-width: 1024px) {
+            .header {
+                flex-direction: column; /* Вертикальное расположение на меньших экранах */
+                align-items: flex-start;
+            }
+            .header__menu {
+                flex-direction: column; /* Вертикальное расположение меню */
+            }
+            .header__menu-item {
+                margin-left: 0;
+                margin-bottom: 10px; /* Отступ между пунктами меню */
+            }
         }
     </style>
 </head>
