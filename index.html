@@ -11,26 +11,27 @@
             margin: 0;
             padding: 0;
         }
-        header {
+        .header {
             display: flex;
             justify-content: space-between;
             padding: 20px;
             background-color: #f4f4f4;
         }
-        nav ul {
+        .header__menu {
             list-style: none;
             display: flex;
+            padding: 0;
         }
-        nav ul li {
+        .header__menu-item {
             margin-left: 20px;
         }
-        main {
+        .main {
             padding: 20px;
         }
-        section {
+        .section {
             margin-bottom: 20px;
         }
-        footer {
+        .footer {
             text-align: center;
             padding: 10px;
             background-color: #f4f4f4;
@@ -39,72 +40,72 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <a class="header__logo" href="#">логотип_спа</a>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="index.html">главная</a></li>
-                <li><a href="services.html">услуги</a></li>
-                <li><a href="about.html">о_нас</a></li>
-                <li><a href="reviews.html">отзывы</a></li>
-                <li><a href="contacts.html">контакты</a></li>
+        <nav class="header__navigation">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="index.html">главная</a></li>
+                <li class="header__menu-item"><a href="services.html">услуги</a></li>
+                <li class="header__menu-item"><a href="about.html">о_нас</a></li>
+                <li class="header__menu-item"><a href="reviews.html">отзывы</a></li>
+                <li class="header__menu-item"><a href="contacts.html">контакты</a></li>
             </ul>
         </nav>
-        <button type="button">
+        <button type="button" class="header__login-button">
             <img src="images/iconenter.png" alt="войти" width="30" height="30">
             <span>войти</span>
         </button>
     </header>
 
-    <main>
-        <section class="first">
-            <h1>спа юля и ирина</h1>
-            <p>ваша любимая сеть спа-салонов!</p>
-            <button type="button">записаться</button>
-            <button type="button">найти ближайший салон</button>
-            <img src="images/IMAGE(1).png" alt="наши услуги" width="400" height="200">
+    <main class="main">
+        <section class="section section--introduction">
+            <h1 class="section__title">спа юля и ирина</h1>
+            <p class="section__description">ваша любимая сеть спа-салонов!</p>
+            <button type="button" class="section__button">записаться</button>
+            <button type="button" class="section__button">найти ближайший салон</button>
+            <img src="images/IMAGE(1).png" alt="наши услуги" width="400" height="200" class="section__image">
         </section>
 
-        <section class="about">
-            <h2>наш спа - это место, где очищается не только тело, но и душа.</h2>
-            <p>многие жители йошкар-олы уже успели по достоинству оценить нашу работу.</p>
-            <ul>
-                <li>
-                    <img src="images/spamassage.jpg" alt="массаж" width="400" height="200">
-                    <h3>массаж</h3>
-                    <p>ведущий способ снятия напряжения</p>
+        <section class="section section--about">
+            <h2 class="section__title">наш спа - это место, где очищается не только тело, но и душа.</h2>
+            <p class="section__description">многие жители йошкар-олы уже успели по достоинству оценить нашу работу.</p>
+            <ul class="section__services">
+                <li class="section__service-item">
+                    <img src="images/spamassage.jpg" alt="массаж" width="400" height="200" class="section__service-image">
+                    <h3 class="section__service-title">массаж</h3>
+                    <p class="section__service-description">ведущий способ снятия напряжения</p>
                 </li>
-                <li>
-                    <img src="images/rounded.jpg" alt="обертывание" width="400" height="200">
-                    <h3>обертывание</h3>
-                    <p>разные комплексы обертывания на ваш выбор</p>
+                <li class="section__service-item">
+                    <img src="images/rounded.jpg" alt="обертывание" width="400" height="200" class="section__service-image">
+                    <h3 class="section__service-title">обертывание</h3>
+                    <p class="section__service-description">разные комплексы обертывания на ваш выбор</p>
                 </li>
-                <li>
-                    <img src="images/spastone.png" alt="дополнительные процедуры" width="400" height="200">
-                    <h3>дополнительные процедуры</h3>
-                    <p>благодаря ним вы почувствуете себя максимально обновленными</p>
+                <li class="section__service-item">
+                    <img src="images/spastone.png" alt="дополнительные процедуры" width="400" height="200" class="section__service-image">
+                    <h3 class="section__service-title">дополнительные процедуры</h3>
+                    <p class="section__service-description">благодаря ним вы почувствуете себя максимально обновленными</p>
                 </li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>спа юля и ирина &copy; йошкар-ола, 2024</p>
     </footer>
 
     <section class="header__registration">
-        <h2>записаться на процедуру</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">имя:</label>
-            <input type="text" id="name" name="name" placeholder="имя" required>
-            <label for="email">e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="e-mail" required>
-            <label for="password">пароль:</label>
-            <input type="password" id="password" name="password" placeholder="пароль" required>
-            <label for="repeat-password">повторите пароль:</label>
-            <input type="password" id="repeat-password" name="repeat-password" placeholder="повторите пароль" required>
-            <input type="submit" value="записаться на сеанс">
-            <button type="button">отмена</button>
+        <h2 class="header__registration-title">записаться на процедуру</h2>
+        <form action="submit_form.php" method="post" class="header__registration-form">
+            <label for="name" class="header__registration-label">имя:</label>
+            <input type="text" id="name" name="name" placeholder="имя" required class="header__registration-input">
+            <label for="email" class="header__registration-label">e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="e-mail" required class="header__registration-input">
+            <label for="password" class="header__registration-label">пароль:</label>
+            <input type="password" id="password" name="password" placeholder="пароль" required class="header__registration-input">
+            <label for="repeat-password" class="header__registration-label">повторите пароль:</label>
+            <input type="password" id="repeat-password" name="repeat-password" placeholder="повторите пароль" required class="header__registration-input">
+            <input type="submit" value="записаться на сеанс" class="header__registration-submit">
+            <button type="button" class="header__registration-cancel">отмена</button>
         </form>
     </section>
 </body>
