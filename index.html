@@ -8,99 +8,29 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            min-width: 1440px; /* Минимальная ширина */
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            max-width: 1440px; /* Центрирование контента */
-            width: 100%;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-bottom: 1px solid #ccc; /* Граница */
-        }
-        .header__menu {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-        .header__menu-item {
-            margin-left: 20px;
-        }
-        .header__menu-item a {
-            text-decoration: none;
-            color: #333;
-            transition: color 0.3s; /* Плавный переход цвета */
-        }
-        .header__menu-item a:hover,
-        .header__menu-item a:focus {
-            color: #007BFF; /* Цвет при наведении и фокусе */
-        }
-        .main {
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 20px;
-            border: 1px solid #ccc; /* Граница */
-            padding: 20px; /* Отступы */
-            box-sizing: border-box; /* Учитываем границы в размерах */
-        }
-        .footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
-            border-top: 1px solid #ccc; /* Граница */
-        }
-        .header__registration {
-            margin-top: 20px;
-            border: 1px solid #ccc; /* Граница */
-            padding: 20px; /* Отступы */
-            box-sizing: border-box; /* Учитываем границы в размерах */
-        }
-        .header__registration-input {
-            width: 100%; /* Ширина 100% для полей ввода */
-            padding: 10px; /* Отступы внутри полей */
-            margin-bottom: 10px; /* Отступ между полями */
-            border: 1px solid #ccc; /* Граница */
-            box-sizing: border-box; /* Учитываем границы в размерах */
-        }
-        .header__registration-input:disabled {
-            background-color: #e9ecef; /* Цвет для отключённых полей */
-        }
-        .header__registration-submit,
-        .header__registration-cancel {
-            padding: 10px 20px; /* Отступы */
-            margin-top: 10px; /* Отступ сверху */
-            cursor: pointer; /* Указатель при наведении */
-            transition: background-color 0.3s; /* Плавный переход фона */
-        }
-        .header__registration-submit:hover,
-        .header__registration-submit:focus,
-        .header__registration-cancel:hover,
-        .header__registration-cancel:focus {
-            background-color: #007BFF; /* Цвет при наведении и фокусе */
-            color: white; /* Цвет текста при наведении */
-        }
+
+
+
+        
+
+       
+
         @media (max-width: 1024px) {
             .header {
-                flex-direction: column; /* Вертикальное расположение на меньших экранах */
+                flex-direction: column;
+                /* Вертикальное расположение на меньших экранах */
                 align-items: flex-start;
             }
+
             .header__menu {
-                flex-direction: column; /* Вертикальное расположение меню */
+                flex-direction: column;
+                /* Вертикальное расположение меню */
             }
+
             .header__menu-item {
                 margin-left: 0;
-                margin-bottom: 10px; /* Отступ между пунктами меню */
+                margin-bottom: 10px;
+                /* Отступ между пунктами меню */
             }
         }
     </style>
@@ -136,22 +66,27 @@
 
             <section class="section section--about">
                 <h2 class="section__title">Наш спа - это место, где очищается не только тело, но и душа.</h2>
-                <p class="section__description">Многие жители Йошкар-Олы уже успели по достоинству оценить нашу работу.</p>
+                <p class="section__description">Многие жители Йошкар-Олы уже успели по достоинству оценить нашу работу.
+                </p>
                 <ul class="section__services">
                     <li class="section__service-item">
-                        <img src="images/spamassage.jpg" alt="Массаж" width="400" height="200" class="section__service-image">
+                        <img src="images/spamassage.jpg" alt="Массаж" width="400" height="200"
+                            class="section__service-image">
                         <h3 class="section__service-title">Массаж</h3>
                         <p class="section__service-description">Ведущий способ снятия напряжения</p>
                     </li>
                     <li class="section__service-item">
-                        <img src="images/rounded.jpg" alt="Обертывание" width="400" height="200" class="section__service-image">
+                        <img src="images/rounded.jpg" alt="Обертывание" width="400" height="200"
+                            class="section__service-image">
                         <h3 class="section__service-title">Обертывание</h3>
                         <p class="section__service-description">Разные комплексы обертывания на ваш выбор</p>
                     </li>
                     <li class="section__service-item">
-                        <img src="images/spastone.png" alt="Дополнительные процедуры" width="400" height="200" class="section__service-image">
+                        <img src="images/spastone.png" alt="Дополнительные процедуры" width="400" height="200"
+                            class="section__service-image">
                         <h3 class="section__service-title">Дополнительные процедуры</h3>
-                        <p class="section__service-description">Благодаря ним вы почувствуете себя максимально обновленными</p>
+                        <p class="section__service-description">Благодаря ним вы почувствуете себя максимально
+                            обновленными</p>
                     </li>
                 </ul>
             </section>
@@ -167,11 +102,14 @@
                 <label for="name" class="header__registration-label">Имя:</label>
                 <input type="text" id="name" name="name" placeholder="Имя" required class="header__registration-input">
                 <label for="email" class="header__registration-label">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="E-mail" required class="header__registration-input">
+                <input type="email" id="email" name="email" placeholder="E-mail" required
+                    class="header__registration-input">
                 <label for="password" class="header__registration-label">Пароль:</label>
-                <input type="password" id="password" name="password" placeholder="Пароль" required class="header__registration-input">
+                <input type="password" id="password" name="password" placeholder="Пароль" required
+                    class="header__registration-input">
                 <label for="repeat-password" class="header__registration-label">Повторите пароль:</label>
-                <input type="password" id="repeat-password" name="repeat-password" placeholder="Повторите пароль" required class="header__registration-input">
+                <input type="password" id="repeat-password" name="repeat-password" placeholder="Повторите пароль"
+                    required class="header__registration-input">
                 <input type="submit" value="Записаться на сеанс" class="header__registration-submit">
                 <button type="button" class="header__registration-cancel">Отмена</button>
             </form>
