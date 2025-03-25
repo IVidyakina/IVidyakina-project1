@@ -1,0 +1,21 @@
+.section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+   }
+.section__services{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+.section__service-image{
+    height: 200px;
+    object-fit: cover;
+}
+.section__service-item{
+    flex-basis: 350px;
+    flex-grow: 1;
+
+}
