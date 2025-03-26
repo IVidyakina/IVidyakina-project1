@@ -1,3 +1,26 @@
 .main {
     padding: 20px;
 }
+.popup{
+    width: 800px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    /* Граница */
+    padding: 20px;
+    /* Отступы */
+    box-sizing: border-box;
+    /* Учитываем границы в размерах */
+}
+
+.popup__input {
+    width: 100%;
+    /* Ширина 100% для полей ввода */
+    padding: 10px;
+    /* Отступы внутри полей */
+    margin-bottom: 10px;
+    /* Отступ между полями */
+    border: 1px solid #ccc;
+    /* Граница */
+    box-sizing: border-box;
+    /* Учитываем границы в размерах */
+}
