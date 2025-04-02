@@ -30,4 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         
     });
+//задание 3.4
+    const masterContainer = document.querySelector(".master");
+    if (masterContainer) {
+    const dataTitleMasters = [
+        "Наталья Кузнецова",
+        "Марина Илюшкина",
+        "Татьяна Васильева",
+        "Елизавета Ефремова",
+    ];
+    const titleMasters = masterContainer.querySelectorAll(".slider__master");
+    titleMasters.forEach((item, index) => {
+        item.textContent = dataTitleMasters[index];
+           });
+    }
+
+
 });

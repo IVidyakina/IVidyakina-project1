@@ -24,3 +24,22 @@
     box-sizing: border-box;
     /* Учитываем границы в размерах */
 }
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+}
+.slider__item{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.slider__image{
+    object-fit: cover;
+    height: 310px;
+    margin: 0 auto;
+}
