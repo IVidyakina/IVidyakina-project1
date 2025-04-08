@@ -89,6 +89,33 @@
                 </ul>
 
             </section>
+            <section class="section reviews">
+                <h2 class="reviews__title">
+                    Отзывы
+                </h2>
+                <ul class="reviews__list">
+                    <!-- <li class="reviews__item">
+                        <h3 class="reviews__subtitle"> Екатерина </h3>
+                        <p class="reviews__text">Была на массаже, могу написать только положительные впечатления ☺️
+                            </p>
+                    </li>
+                    <li class="reviews__item">
+                        <h3 class="reviews__subtitle"> Анастасия </h3>
+                        <p class="reviews__text">Хорошее место, приятный персонал, сервис салонный, обстановка располагает на релакс
+                            </p>
+                    </li>
+                    <li class="reviews__item">
+                        <h3 class="reviews__subtitle"> Анна</h3>
+                        <p class="reviews__text"> Хороший спа, уютная атмосфера и кабинеты , разнообразные программы, можно выбрать на любой вкус 
+                            </p>
+                    </li>
+                    <li class="reviews__item">
+                        <h3 class="reviews__subtitle"> Мария </h3>
+                        <p class="reviews__text">Хороший спа, уютная атмосфера и кабинеты , разнообразные программы, можно выбрать на любой вкус 
+                            </p>
+                    </li> -->
+                </ul>
+            </section>
         </main>
 
         <footer class="footer">
@@ -114,15 +141,18 @@
             </form>
         </section>
     </div>
-    <section class="popup" hidden>
-        <h2>Войти в личный кабинет</h2>
-        <form action="/" class="popup__form">
-            <input type="text" name="name" placeholder="введите вашу фамилию" required class="popup__input">
-            <input type="text" name="name" placeholder="введите ваше имя" required class="popup__input">
-            <input type="email" name="email" placeholder="введите ваш email" required class="popup__input">
-            <button type="button" class="popup__button">Войти</button>
-        </form>
-    </section>
+    <div class="dialog" hidden>
+        <section class="popup">
+            <button class="popup__close" type="button"> Закрыть </button>
+            <h2>Войти в личный кабинет</h2>
+            <form action="/" class="popup__form">
+                <input type="text" name="name" placeholder="введите вашу фамилию" required class="popup__input">
+                <input type="text" name="name" placeholder="введите ваше имя" required class="popup__input">
+                <input type="email" name="email" placeholder="введите ваш email" required class="popup__input">
+                <button type="button" class="popup__button">Войти</button>
+            </form>
+        </section>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
