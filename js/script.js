@@ -106,6 +106,49 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    //3.6
+    const cardsServices = document.querySelector(".services");
+    if (cardsServices) {
+        const cardListServices = cardsServices.querySelector(".services__list");
+
+        // Пример URL для получения данных с сервера
+        const apiUrl = "data.json";
+
+        // Функция для создания карточки
+        const createCard = (imageUrl, imageAlt, imageWidth, imageHeight, title, description) => {
+            // Шаблонные строки и подстановки
+            const services = `
+            <li class="services__item">
+                <img class="services__picture" src="${imageUrl}" alt="${imageAlt}" width="${imageWidth}" height="${imageHeight}">
+                <h3 class="services__subtitle">${title}</h3>
+                <p class="services__text">${description}</p>
+            </li>
+        `;
+
+            return services;
+        };
+        fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data); // Данные
+                console.log(typeof data); // Тип полученных данных
+
+                data.forEach((item) => {
+                    const cardElement = createCard(
+                        item.imageUrl,
+                        item.imageAlt,
+                        item.imageWidth,
+                        item.imageHeight,
+                        item.title,
+                        item.description
+                    );
+                    cardListServices.insertAdjacentHTML("beforeend", cardElement);
+                });
+             });
+
+
+    }
+
 
 
 
