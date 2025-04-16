@@ -1,0 +1,30 @@
+[
+    {
+         "imageUrl": "images/balans1.jpeg",
+         "imageAlt": "Услуга 1",
+         "imageWidth": 380,
+         "imageHeight": 200,
+         "title": "Баланс",
+         "description": 
+         "Прогревание в сауне\nСкрабирование тела\nМассаж всего тела\nЧайная церемония\n120 мин. - 6600 руб."
+     },
+     {
+        "imageUrl": "images/slim2.jpeg",
+        "imageAlt": "Услуга 2",
+        "imageWidth": 380,
+        "imageHeight": 200,
+        "title": "Легкость",
+        "description": "Прогревание в сауне\nМассаж тела\nМассаж лица и головы\nЧайная церемония\n120 мин. - 6000 руб."
+    },
+    {
+        "imageUrl": "images/parafin3.jpg",
+        "imageAlt": "Услуга 3",
+        "imageWidth": 380,
+        "imageHeight": 200,
+        "title": "Расслабление",
+        "description": "Скрабирование тела\nОбертывание\nМассаж всего тела\nПарафинотерапия рук и ног\nЧайная церемония\n120 мин. - 6700 руб."
+    }
+
+
+
+ ]

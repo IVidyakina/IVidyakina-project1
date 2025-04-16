@@ -1,0 +1,18 @@
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        /* Вертикальное расположение на меньших экранах */
+        align-items: flex-start;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        /* Вертикальное расположение меню */
+    }
+
+    .header__menu-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+        /* Отступ между пунктами меню */
+    }
+}
