@@ -149,8 +149,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+    // Preloader страницы
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.content');
+    if (preloader && content) {
+        setTimeout(() => {
+            // Скрываем прелоадер
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
 
+            // Показываем контент
+            content.style.display = 'block';
 
+            // Удаляем элемент из DOM
+            preloader.remove();
+        }, 3000); // Задержка 3 секунды
+    }
 
+// Карусель (слайдер)
+const slider = document.querySelector('.swiper');
+
+if (slider) {
+    const swiper = new Swiper(slider, {
+        // Дополнительные параметры
+        slidesPerView: 4, // Количество слайдов на экране
+        spaceBetween: 30, // Расстояние между слайдами
+        loop: true,  // Зацикливание слайдов
+
+        // Пагинация
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Навигационные стрелки
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
 
 });
